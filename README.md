@@ -2,12 +2,6 @@
 Additional Notebooks for the Building NLP Applications course.
 
 The notebooks require `gensim` to be installed.
-One of the notebooks also assumes that the `word2vec-google-news-300.gz` is available in the shared folder.
-This file can be downloaded with the Gensim downloader:
+One of the notebooks also assumes that the `glove-wiki-gigaword-200.gz` is available in the shared folder.
 
-```
-import gensim.downloader as api
-wv = api.load('word2vec-google-news-300')
-```
-
-The file will be stored in `~/gensim-data/` and can be moved wherever necessary.
+The `download.ipynb` notebook shows how to download the embeddings models with the Gensim API. The models are stored by default in `~/gensim-data/` but can be moved elsewhere.
